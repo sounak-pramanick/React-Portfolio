@@ -3,14 +3,14 @@ import { technologies } from './data/technologies';
 
 const Technologies = () => {
   return (
-    <div 
+    <div
       name="technologies"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="pt-80 md:pt-0 bg-gradient-to-b from-black to-gray-800 w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
-          <p className="text-4xl inline font-bold border-b-4 border-gray-500 p-2">Technologies</p>
-          <p className="py-6">These are the technologies I've worked with:-</p>
+          <p className="text-4xl inline font-bold border-b-4 border-gray-500">Technologies</p>
+          <p className="py-6">These are some of the technologies I've worked with:-</p>
         </div>
 
         <div 

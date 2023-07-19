@@ -2,8 +2,9 @@ import React from 'react';
 import HeroImage from '../assets/hero-image.svg';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-scroll'
 
-const Home = () => {
+const Home = ({showLinks, setShowLinks}) => {
   return (
     <div 
         name="home"
@@ -25,6 +26,7 @@ const Home = () => {
                                 .pauseFor(3000)
                                 .deleteAll()
                                 .typeString(" Tech Enthusiast")
+                                .pauseFor(3000)
                                 .start();
                         }}
                         options={{
@@ -39,9 +41,16 @@ const Home = () => {
                     I have 2 years of experience building and designing software. I love to work on web applications using technologies like HTML, CSS, JavaScript, React and Tailwind
                 </p>
 
-                <div>
-                    <button className="group flex items-center text-white w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-                        Portfolio
+                <div className="flex">
+                    <Link to="portfolio" smooth duration={500} className="mx-3 group flex items-center text-white w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                        Projects
+                        <span className="group-hover:rotate-90 duration-300">
+                            <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                        </span>
+                    </Link>
+
+                    <button onClick={() => setShowLinks(!showLinks)} className="lg:hidden mx-3 group flex items-center text-white w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                        My Links
                         <span className="group-hover:rotate-90 duration-300">
                             <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
                         </span>
@@ -49,7 +58,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <img src={HeroImage} alt="profile" className="rounded-2xl w-2/3 md:w-2/5 " />
+            <img src={HeroImage} alt="profile" className="rounded-2xl mx-auto h-[50%] w-2/3 md:w-2/5" />
         </div>
     </div>
   )
