@@ -2,7 +2,7 @@ import React from 'react';
 import HeroImage from '../assets/hero-image.svg';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import Typewriter from 'typewriter-effect';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 const Home = ({showLinks, setShowLinks}) => {
   return (

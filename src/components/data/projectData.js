@@ -2,6 +2,8 @@ import YoutubeClone from '../../assets/youtubeclone.PNG';
 import BeyondTheScreen from '../../assets/beyondthescreen.PNG';
 import Socially from '../../assets/socially.PNG';
 import Weather from '../../assets/weather.PNG';
+import MeditationApp from '../../assets/meditationapp.PNG';
+
 
 export const projectData = [
     {
@@ -24,6 +26,12 @@ export const projectData = [
     },
     {
         id: 4,
+        src: MeditationApp,
+        live: 'https://meditation-app-sounak.netlify.app/',
+        code: 'https://github.com/sounak-pramanick/Meditation-App'
+    },
+    {
+        id: 5,
         src: Weather,
         live: 'https://whatstheweather-website.netlify.app/',
         code: 'https://github.com/sounak-pramanick/Whats-the-Weather'
